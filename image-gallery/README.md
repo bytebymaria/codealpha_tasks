@@ -28,12 +28,13 @@ A responsive photography portfolio website built with HTML, CSS, and JavaScript.
 
 ## 📷 Preview
 
+<h3 align="center">Hero Section</h3>
+
 <p align="center">
-  ###  Hero Section
   <img src="assets/screenshots/hero.png" alt="Lenscape Hero Section" width="90%">
 </p>
 
-### 🖼️ Gallery
+<h3 align="center">Gallery</h3>
 
 <p align="center">
   <img src="assets/screenshots/gallery-1.png" alt="Lenscape Gallery View 1" width="90%">
@@ -43,25 +44,25 @@ A responsive photography portfolio website built with HTML, CSS, and JavaScript.
   <img src="assets/screenshots/gallery-2.png" alt="Lenscape Gallery View 2" width="90%">
 </p>
 
-### 🔍 Interactive Lightbox
+<h3 align="center">Interactive Lightbox</h3>
 
 <p align="center">
   <img src="assets/screenshots/lightbox.png" alt="Lenscape Lightbox" width="90%">
 </p>
 
-### ℹ️ About Section
+<h3 align="center">About Section</h3>
 
 <p align="center">
   <img src="assets/screenshots/about.png" alt="Lenscape About Section" width="90%">
 </p>
 
-### 📬 Get in Touch
+<h3 align="center">Get in Touch</h3>
 
 <p align="center">
   <img src="assets/screenshots/contact.png" alt="Lenscape Contact Section" width="90%">
 </p>
 
-### ⚫ Footer
+<h3 align="center">Footer</h3>
 
 <p align="center">
   <img src="assets/screenshots/footer.png" alt="Lenscape Footer" width="90%">
