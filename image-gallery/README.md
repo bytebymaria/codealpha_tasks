@@ -72,9 +72,7 @@ A responsive photography portfolio website built with HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 
-🔗 **Coming Soon**
-
-> Replace this with your GitHub Pages link after deployment.
+🔗 **[View Live Demo](https://bytebymaria.github.io/codealpha_tasks/image-gallery/)**
 
 ---
 
