@@ -13,6 +13,7 @@ A responsive photography portfolio website featuring category-based filtering, a
 **Tech Stack:** HTML5, CSS3, JavaScript
 
 📁 Folder: `image-gallery`
+🌐 **Live Demo:** https://bytebymaria.github.io/codealpha_tasks/image-gallery/
 
 ---
 
@@ -23,6 +24,7 @@ A clean and responsive calculator application capable of performing basic arithm
 **Tech Stack:** HTML5, CSS3, JavaScript
 
 📁 Folder: `calculator`
+🌐 **Live Demo:** https://bytebymaria.github.io/codealpha_tasks/calculator/
 
 ---
 
