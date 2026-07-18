@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: #FAFAFA;
+    --background-body: #F6F1E8;
+    --surface: #FFFFFF;
+    --text-dark: #111111;
+    --text-light: #666666;
+    --border: #E8E8E8;
+    --hover: #F3F3F3;
+    --transition: .3s ease;
+    --container-width: 1200px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text-dark);
+    line-height: 1.7;
+    background: var(--background-body)
+}
+
+.container {
+    width: min(90%, var(--container-width));
+    margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    letter-spacing: .03em;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+nav a,
+.dropbtn {
+    font-size: .95rem;
+    font-weight: 500;
+    transition: var(--transition);
+    position: relative;
+}
+
+nav a::after,
+.dropbtn::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -4px;
+
+    width: 0;
+    height: 1px;
+
+    transition: .3s ease;
+}
+
+nav a:hover::after,
+.dropbtn:hover::after {
+    width: 100%;
+}
+
+nav a:hover,
+.dropbtn:hover {
+    color: var(--text-light);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(246, 241, 232, 0.9);
+    ;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+.brand-logo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    cursor: pointer;
+}
+
+.dropbtn {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 130%;
+    left: 0;
+
+    min-width: 180px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    padding: .6rem 0;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: var(--transition);
+}
+
+.dropdown-content button {
+    width: 100%;
+    padding: .8rem 1.2rem;
+    text-align: left;
+    transition: var(--transition);
+}
+
+.dropdown-content button:hover {
+    background: var(--hover);
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.hero {
+    position: relative;
+    height: 70svh;
+    overflow: hidden;
+    padding: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .30);
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: white;
+    width: min(90%, 700px);
+}
+
+.hero-content h2 {
+    font-size: clamp(5rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.gallery-section {
+    padding: 7rem 0;
+}
+
+
+.gallery {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+
+    overflow: hidden;
+    border-radius: 14px;
+    cursor: pointer;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+
+    transition: transform .45s ease, filter .45s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.92);
+}
+
+.about {
+    background: var(--background);
+}
+
+.about .container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.9;
+}
+
+.about h2::after {
+    content: "";
+    display: block;
+
+    width: 200px;
+    height: 2px;
+    background: var(--text-dark);
+    margin: .8rem auto 0;
+}
+
+.contact-section {
+    background: var(--background-body);
+}
+
+.contact-section .container {
+    max-width: 700px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    padding: .8rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    transition: var(--transition);
+}
+
+.contact-links a:hover {
+    background: var(--text-dark);
+    color: white;
+}
+
+.contact-section p {
+    color: var(--text-light);
+    line-height: 1.9;
+    margin-bottom: 3rem;
+}
+
+footer {
+    background: #111111;
+    color: white;
+    padding-top: 5rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-links h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-links p {
+    margin-bottom: .8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, .75);
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, .12);
+
+    margin: 3rem 0 1.5rem;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: rgba(255, 255, 255, .6);
+    font-size: .9rem;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, .9);
+
+    z-index: 1000;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+
+    top: 2rem;
+    right: 2rem;
+
+    font-size: 2.5rem;
+    color: white;
+}
+
+.prev,
+.next {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 3rem;
+
+    color: white;
+
+    padding: 1rem;
+}
+
+.prev {
+    left: 2rem;
+}
+
+.next {
+    right: 2rem;
+}
+
+@media (max-width: 1100px) and (orientation: portrait) {
+
+    .container {
+        width: min(92%, var(--container-width));
+    }
+
+    .hero {
+        height: 40svh;
+    }
+
+    .hero-content h2 {
+        font-size: 3.5rem;
+    }
+
+    .gallery {
+        column-count: 2;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 4rem 0;
+    }
+
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav>ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 30svh;
+    }
+
+    .hero-content {
+        padding: 0 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .gallery {
+        column-count: 2;
+        column-gap: .5rem;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .prev,
+    .next {
+        font-size: 2rem;
+        padding: .5rem;
+    }
+
+    .close {
+        font-size: 2rem;
+        top: 1rem;
+        right: 1rem;
+    }
+
+}
