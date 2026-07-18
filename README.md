@@ -38,10 +38,10 @@ A clean and responsive calculator application capable of performing basic arithm
 
 ## 👩‍💻 Author
 
-**Maria Siddiqui**
+**Maria Khalid**
 
-* GitHub: https://github.com/bytebymaria
-* LinkedIn: *(Add your LinkedIn profile URL here)*
+- GitHub: [@bytebymaria](https://github.com/bytebymaria)
+- LinkedIn: [Maria Khalid](www.linkedin.com/in/maria-khalid2706)
 
 ---
 
