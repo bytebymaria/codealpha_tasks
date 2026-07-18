@@ -28,9 +28,8 @@ A responsive photography portfolio website built with HTML, CSS, and JavaScript.
 
 ## 📷 Preview
 
-### ✨ Hero Section
-
 <p align="center">
+  ###  Hero Section
   <img src="assets/screenshots/hero.png" alt="Lenscape Hero Section" width="90%">
 </p>
 
