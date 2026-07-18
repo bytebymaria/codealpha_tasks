@@ -63,8 +63,8 @@ Building this calculator helped me strengthen my understanding of:
 
 **Maria Khalid**
 
-* GitHub: https://github.com/bytebymaria
-* LinkedIn: https://www.linkedin.com/in/maria-khalid2706/
+- GitHub: [@bytebymaria](https://github.com/bytebymaria)
+- LinkedIn: [Maria Khalid](www.linkedin.com/in/maria-khalid2706)
 
 ---
 
